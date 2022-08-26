@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Gebyar Matematika UIN Sunan Kalijaga website",
+    "slug": "gebyar-matematika-uin-sunan-kalijaga-website",
+    "description": "CBT app built for Gebyar Matematika UIN SUKA olympiad",
+    "url": {
+      "github": "#",
+      "website": "https://gebyarmatematikauinsk.com/"
+    },
+    "img": "gebyar-matematika.png",
+    "stacks": "Laravel, Bootstrap",
+    "type": "Freelance Project"
+  },
+  {
+    "name": "Simple CBT",
+    "slug": "simple-cbt",
+    "description": "Simple CBT app built with Laravel",
+    "url": {
+      "github": "#",
+      "website": "https://simulasimatematika.000webhostapp.com/"
+    },
+    "img": "cbt-simpel.png",
+    "stacks": "Laravel, Bootstrap",
+    "type": "Personal Project"
+  },
+  {
+    "name": "Cayley Table Generator",
+    "slug": "cayley-table-generator",
+    "description": "Cayley's table calculator helps you to generate the Cayley's table",
+    "url": {
+      "github": "https://github.com/luthfikamaal/tabelcayleygenerator",
+      "website": "https://simulasimatematika.000webhostapp.com/"
+    },
+    "img": "tabel-cayley.png",
+    "stacks": "PHP Native",
+    "type": "Personal Project"
+  },
+  {
+    "name": "Quran Online",
+    "slug": "quran-online",
+    "description": "Al-Quran website with media audio Syekh Abdurrahman As-Sudais",
+    "url": {
+      "github": "https://github.com/luthfikamaal/quran-vuejs",
+      "website": "https://quranonline.vercel.app/"
+    },
+    "img": "quran-online.png",
+    "stacks": "Vue, Quran API, TailwindCSS",
+    "type": "Personal Project"
+  },
+  {
+    "name": "Bola-In",
+    "slug": "bola-in",
+    "description": "Website to find details of football players and some matches",
+    "url": {
+      "github": "https://github.com/luthfikamaal/bola-in",
+      "website": "https://bola-in.vercel.app/"
+    },
+    "img": "bola-in.png",
+    "stacks": "Vue, Sport DB, TailwindCSS",
+    "type": "Personal Project"
+  }
+]

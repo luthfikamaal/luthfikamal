@@ -1,0 +1,44 @@
+<template>
+  <div v-show="post.title == null">Loading...</div>
+  <div class="">
+    <div class="font-poppins mb-1 text-xl font-semibold">{{ post.title }}</div>
+    <div v-show="post.title != null" class="mb-4 italic text-slate-700">By Muhammad Luthfi Kamal</div>
+    <div v-html="post.text" class="font-serif"></div>
+    <div class="my-3">
+      <span class="my-3 rounded-full bg-indigo-500 px-3 py-1 text-white">{{ category.name }}</span>
+    </div>
+  </div>
+</template>
+
+<script>
+import { useRoute, useRouter } from 'vue-router';
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+import urlAPI from '@/api/config.js';
+export default {
+  setup() {
+    window.scrollTo(0, 0);
+    const route = useRoute();
+    let post = ref({});
+    let category = ref({});
+    console.log(urlAPI);
+    onMounted(() => {
+      axios
+        .get(`${urlAPI}/post/${route.params.slug}`)
+        .then((result) => {
+          post.value = result.data.data;
+          category.value = result.data.data.category;
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    });
+    return {
+      post,
+      category,
+    };
+  },
+};
+</script>
+
+<style lang="scss" scoped></style>
