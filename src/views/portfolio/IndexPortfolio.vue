@@ -2,7 +2,7 @@
   <h1 class="mb-5 text-2xl font-semibold">My Recent Projects</h1>
   <div class="mb-3">
     <div v-for="portfolio in portfolios" class="mb-5">
-      <img v-bind:src="'../../../assets/img/' + portfolio.img" class="mb-3 w-full rounded-md shadow-md md:w-2/3" />
+      <img v-bind:src="'/src/assets/img/' + portfolio.img" class="mb-3 w-full rounded-md shadow-md md:w-2/3" />
       <div class="mb-2">
         <span class="rounded-md bg-indigo-500 px-2 py-1 text-white">{{ portfolio.type }}</span>
       </div>
