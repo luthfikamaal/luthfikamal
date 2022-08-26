@@ -1,5 +1,5 @@
 <template>
-  <h1 class="mb-5 text-2xl font-semibold">My Recent Projects</h1>
+  <h1 class="mb-5 text-2xl font-semibold">Projects</h1>
   <div class="mb-3">
     <div v-for="portfolio in portfolios" class="mb-5">
       <img v-bind:src="portfolio.img" class="mb-3 w-full rounded-md shadow-md md:w-2/3" />
