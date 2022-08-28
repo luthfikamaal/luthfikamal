@@ -2,7 +2,7 @@
   <h1 class="mb-3 text-2xl font-semibold">Posts</h1>
   <div class="mb-2 text-xl">Category: {{ category.name }}</div>
   <div class="scrolling-x mb-2 flex overflow-x-scroll">
-    <router-link :to="{ name: 'post' }" class="mr-2 rounded-full border border-solid border-indigo-500 px-3 py-1 text-indigo-500 transition-all hover:bg-indigo-600 hover:text-white">All</router-link>
+    <button @click="getAllPosts" class="mr-2 rounded-full border border-solid border-indigo-500 px-3 py-1 text-indigo-500 transition-all hover:bg-indigo-600 hover:text-white">All</button>
     <span v-for="category in categories">
       <button class="mr-2 rounded-full border border-solid border-indigo-500 px-3 py-1 text-indigo-500 transition-all hover:bg-indigo-600 hover:text-white" @click="getPosts(category.slug)">
         {{ category.name }}
@@ -13,13 +13,14 @@
   <div id="posts">
     <div v-for="(post, index) in posts" :key="index" class="mb-4">
       <router-link :to="{ name: 'postshow', params: { slug: post.slug } }" class="font-poppins text-xl">{{ post.title }}</router-link>
-      <div class="my-2 font-thin italic text-slate-600">{{ post.created_at }}</div>
+      <div class="my-2 font-thin italic text-slate-600">{{ post.category_id }}</div>
       <hr />
     </div>
   </div>
 </template>
 
 <script>
+import moment from 'moment-timezone';
 import { useRoute, useRouter } from 'vue-router';
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
@@ -38,6 +39,17 @@ export default {
         .then((result) => {
           this.posts = result.data.data.posts;
           this.category = result.data.data;
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    },
+    getAllPosts() {
+      axios
+        .get(`${urlAPI}/post`)
+        .then((result) => {
+          this.posts = result.data.data;
+          this.category.name = 'All';
         })
         .catch((err) => {
           console.log(err.message);

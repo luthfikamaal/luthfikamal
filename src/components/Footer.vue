@@ -5,7 +5,7 @@
 export default {
   data() {
     return {
-      footerText: '&copy; 2022. Built with Vue 3 and Tailwind. - <a href="https://github.com/luthfikamaal/" class="text-blue-900 underline">Muhammad Luthfi Kamal</a> Masih percobaan',
+      footerText: 'Built with Vue 3 and Tailwind.',
     };
   },
 };

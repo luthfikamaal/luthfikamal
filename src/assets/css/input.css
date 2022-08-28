@@ -30,4 +30,7 @@
     border-radius: 4px;
     @apply bg-slate-50 transition-all hover:bg-slate-300;
   }
+  .active-category {
+    @apply bg-indigo-600 text-white;
+  }
 }

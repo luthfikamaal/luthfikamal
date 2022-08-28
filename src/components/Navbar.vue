@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed w-full items-center px-3 py-3 text-black backdrop-blur-md dark:text-white sm:px-5 md:px-24">
+  <div class="fixed w-full items-center px-3 py-3 text-black backdrop-blur-sm dark:text-white sm:px-5 md:px-24">
     <div class="mx-auto flex items-center">
       <div class="font-poppins mr-10 text-2xl font-semibold">
         <router-link :to="{ name: 'home' }">{{ titleNav }}</router-link>

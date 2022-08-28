@@ -3,10 +3,6 @@
     <h1 class="font-poppins text-3xl">{{ person.name }}</h1>
     <p class="font-serif text-lg text-slate-500">Web Development Enthusiast</p>
   </div>
-  <div class="mb-3">
-    <h2 class="font-poppins mb-2 text-xl">About</h2>
-    <p class="font-serif leading-6 text-slate-800">{{ person.about }}</p>
-  </div>
 </template>
 
 <script>
