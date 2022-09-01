@@ -33,4 +33,19 @@
   .active-category {
     @apply bg-indigo-600 text-white;
   }
+  .form-input {
+    @apply w-full rounded-md border-2 border-solid border-slate-300 px-2 py-1 outline-none focus:border-indigo-600;
+  }
+  .b {
+    @apply rounded-md px-3 py-2 outline-none transition-all;
+  }
+  .b-primary {
+    @apply bg-indigo-600 text-white hover:bg-indigo-700;
+  }
+  .post-content {
+    @apply leading-relaxed;
+  }
+  .post-content a {
+    @apply text-indigo-600 underline;
+  }
 }

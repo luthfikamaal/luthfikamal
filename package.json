@@ -10,6 +10,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.8",
     "axios": "^0.27.2",
+    "json-server": "^0.17.0",
     "moment-timezone": "^0.5.37",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",

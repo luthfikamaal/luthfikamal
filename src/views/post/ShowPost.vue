@@ -3,7 +3,7 @@
   <div class="">
     <div class="font-poppins mb-1 text-xl font-semibold">{{ post.title }}</div>
     <div v-show="post.title != null" class="mb-4 italic text-slate-700">By Muhammad Luthfi Kamal</div>
-    <div v-html="post.text" class="font-serif"></div>
+    <div v-html="post.text" class="post-content font-serif"></div>
     <div class="my-3">
       <span class="my-3 rounded-full bg-indigo-500 px-3 py-1 text-white">{{ category.name }}</span>
     </div>
@@ -21,7 +21,6 @@ export default {
     const route = useRoute();
     let post = ref({});
     let category = ref({});
-    console.log(urlAPI);
     onMounted(() => {
       axios
         .get(`${urlAPI}/post/${route.params.slug}`)
@@ -33,6 +32,7 @@ export default {
           console.log(err.message);
         });
     });
+    document.title = 'Hello World';
     return {
       post,
       category,

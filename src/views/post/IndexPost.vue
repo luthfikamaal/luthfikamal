@@ -1,5 +1,6 @@
 <template>
-  <h1 class="mb-3 text-2xl font-semibold">Posts</h1>
+  <h1 class="mb-1 text-2xl font-semibold">Posts</h1>
+  <p class="mb-3 font-serif italic">Blog dan beberapa catatan saya dalam pengembangan Web</p>
   <div class="mb-2 text-xl">Category: {{ category.name }}</div>
   <div class="scrolling-x mb-2 flex overflow-x-scroll">
     <button @click="getAllPosts" class="mr-2 rounded-full border border-solid border-indigo-500 px-3 py-1 text-indigo-500 transition-all hover:bg-indigo-600 hover:text-white">All</button>
@@ -25,6 +26,7 @@ import { useRoute, useRouter } from 'vue-router';
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import urlAPI from '@/api/config.js';
+import title from '@/helpers/title.js';
 export default {
   data() {
     return {
