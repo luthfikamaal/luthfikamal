@@ -58,6 +58,7 @@ export default {
   },
   methods: {
     changeTheme() {
+      alert('Fitur sedang dikembangkan :)');
       if (this.theme == 'light') {
         this.theme = 'dark';
       } else {

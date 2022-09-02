@@ -14,7 +14,7 @@
   <div id="posts">
     <div v-for="(post, index) in posts" :key="index" class="mb-4">
       <router-link :to="{ name: 'postshow', params: { slug: post.slug } }" class="font-poppins text-xl">{{ post.title }}</router-link>
-      <div class="my-2 font-thin italic text-slate-600">{{ post.category_id }}</div>
+      <div class="my-1 font-thin italic text-slate-600">{{ post.category_id }}</div>
       <hr />
     </div>
   </div>
