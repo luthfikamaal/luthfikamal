@@ -14,9 +14,6 @@
         <li class="nav-link">
           <router-link :to="{ name: 'post' }">Posts</router-link>
         </li>
-        <li class="nav-link">
-          <router-link :to="{ name: 'contact' }">Contact</router-link>
-        </li>
       </ul>
       <div class="ml-auto flex">
         <button @click="changeTheme" class="btn mr-2 rounded-md bg-blue-700 text-white">
@@ -37,9 +34,6 @@
           </li>
           <li class="nav-link">
             <router-link :to="{ name: 'post' }">Posts</router-link>
-          </li>
-          <li class="nav-link">
-            <router-link :to="{ name: 'contact' }">Contact</router-link>
           </li>
         </ul>
       </div>
@@ -67,7 +61,6 @@ export default {
     },
     showNavLinks() {
       let navLink = document.querySelector('#nav-links');
-      // navLink.classList.add('block');
       if (this.navLinks == false) {
         navLink.classList.remove('hidden');
         navLink.classList.add('block', 'md:hidden');

@@ -59,14 +59,6 @@ const router = createRouter({
         title: `My Portfolio - ${title}`,
       },
     },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: ContactView,
-      meta: {
-        title: `Contact - ${title}`,
-      },
-    },
   ],
 });
 
