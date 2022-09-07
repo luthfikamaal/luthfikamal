@@ -1,6 +1,6 @@
 <template>
   <div v-show="post.title == null">Loading...</div>
-  <div class="">
+  <div class="show-post">
     <div class="font-poppins mb-1 text-xl font-semibold">{{ post.title }}</div>
     <div class="mb-4 flex gap-x-4">
       <div v-show="post.title != null" class="italic text-slate-700">By Muhammad Luthfi Kamal</div>
