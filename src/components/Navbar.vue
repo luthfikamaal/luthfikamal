@@ -2,17 +2,17 @@
   <div class="fixed w-full items-center px-3 py-3 text-black backdrop-blur-sm dark:text-white sm:px-5 md:px-24">
     <div class="mx-auto flex items-center">
       <div class="font-poppins mr-10 text-2xl font-semibold">
-        <router-link :to="{ name: 'home' }">{{ titleNav }}</router-link>
+        <router-link @click="hiddenNav" :to="{ name: 'home' }">{{ titleNav }}</router-link>
       </div>
       <ul class="font-poppins hidden md:flex">
         <li class="nav-link">
-          <router-link :to="{ name: 'now' }">Now</router-link>
+          <router-link @click="hiddenNav" :to="{ name: 'now' }">Now</router-link>
         </li>
         <li class="nav-link">
-          <router-link :to="{ name: 'portfolio' }">Portfolio</router-link>
+          <router-link @click="hiddenNav" :to="{ name: 'portfolio' }">Portfolio</router-link>
         </li>
         <li class="nav-link">
-          <router-link :to="{ name: 'post' }">Posts</router-link>
+          <router-link @click="hiddenNav" :to="{ name: 'post' }">Posts</router-link>
         </li>
       </ul>
       <div class="ml-auto flex">

@@ -1,16 +1,12 @@
 <template>
   <h1 class="mb-1 text-2xl font-semibold">Posts</h1>
   <p class="mb-3 font-serif italic">Blog dan beberapa catatan saya dalam pengembangan Web</p>
-  <div class="mb-2 text-xl">Category: {{ category.name }}</div>
-  <div class="scrolling-x mb-2 flex overflow-x-scroll">
-    <button @click="getAllPosts" class="mr-2 rounded-full border border-solid border-indigo-500 px-3 py-1 text-indigo-500 transition-all hover:bg-indigo-600 hover:text-white">All</button>
-    <span v-for="category in categories">
-      <button class="mr-2 rounded-full border border-solid border-indigo-500 px-3 py-1 text-indigo-500 transition-all hover:bg-indigo-600 hover:text-white" @click="getPosts(category.slug)">
-        {{ category.name }}
-      </button>
-    </span>
+  <div v-show="posts.length == 0">
+    <div class="mb-3" v-for="i in 7">
+      <div class="mb-1 h-10 rounded-md bg-indigo-200"></div>
+      <div class="h-5 rounded-md bg-slate-100"></div>
+    </div>
   </div>
-  <div v-show="posts.length == 0">Loading...</div>
   <div id="posts">
     <div v-for="(post, index) in posts" :key="index" class="mb-4">
       <router-link :to="{ name: 'postshow', params: { slug: post.slug } }" class="font-poppins text-xl">{{ post.title }}</router-link>

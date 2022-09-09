@@ -1,10 +1,11 @@
 <template>
-  <div v-show="post.title == null">Loading...</div>
+  <div v-show="post.title == null">
+    <div class="h-screen rounded-md bg-indigo-100"></div>
+  </div>
   <div class="show-post">
     <div class="font-poppins mb-1 text-xl font-semibold">{{ post.title }}</div>
     <div class="mb-4 flex gap-x-4">
       <div v-show="post.title != null" class="italic text-slate-700">By Muhammad Luthfi Kamal</div>
-      <div class="text-slate-400" v-show="post.views != null"><i class="bi bi-eye"></i> {{ post.views }}</div>
     </div>
     <div v-html="post.text" class="post-content font-serif"></div>
     <div class="my-3">
