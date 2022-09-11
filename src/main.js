@@ -9,7 +9,7 @@ import './assets/css/output.css';
 router.afterEach((to, from) => {
   nextTick(() => {
     const title = to.meta.title;
-    document.title = title + ' - Muhammad Luthfi Kamal';
+    document.title = title;
   });
 });
 

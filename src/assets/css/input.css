@@ -51,4 +51,6 @@
   .show-post * {
     @apply leading-7;
   }
+  .show-b {
+  }
 }

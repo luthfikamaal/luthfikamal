@@ -3,9 +3,9 @@
     <div class="h-screen rounded-md bg-indigo-100"></div>
   </div>
   <div class="show-post">
-    <div class="font-poppins mb-1 text-xl font-semibold">{{ post.title }}</div>
-    <div class="mb-4 flex gap-x-4">
-      <div v-show="post.title != null" class="italic text-slate-700">By Muhammad Luthfi Kamal</div>
+    <div class="mb-3 rounded-md bg-indigo-700 py-2 text-center">
+      <h1 class="font-poppins mb-1 text-2xl text-white">{{ post.title }}</h1>
+      <p v-show="post.title != null" class="font-ssp text-center text-slate-100">By Muhammad Luthfi Kamal</p>
     </div>
     <div v-html="post.text" class="post-content font-serif"></div>
     <div class="my-3">

@@ -5,7 +5,7 @@
   <div class="mb-3 font-serif font-semibold">
     Stacks: <span class="font-normal text-slate-800">{{ portfolio.stacks }}</span>
   </div>
-  <div class="flex">
+  <div class="mb-3 flex">
     <a v-bind:href="portfolio.url.website" target="_blank" class="mr-1 rounded-md bg-indigo-500 px-2 py-1 text-white transition-all hover:bg-indigo-600">
       <i class="bi bi-globe2"></i>
     </a>
@@ -22,13 +22,11 @@ import { ref } from 'vue';
 export default {
   setup() {
     const route = useRoute();
-    console.log(route.params.slug);
     let portfolio = ref({});
     portfolio = portfolios.filter((el) => {
       return el.slug == route.params.slug;
     });
     portfolio = portfolio[0];
-    console.log(portfolio);
     return { portfolio };
   },
 };
