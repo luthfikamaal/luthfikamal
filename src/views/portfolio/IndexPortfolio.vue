@@ -4,7 +4,7 @@
     <p class="font-serif italic text-slate-100">My recent projects</p>
   </div>
   <div class="mb-3 w-full">
-    <div v-for="portfolio in portfolios" class="animate__animated animate__flipInX mx-auto mb-5 md:text-center">
+    <div v-for="portfolio in portfolios" class="animate__animated animate__zoomInRight mx-auto mb-5 md:text-center">
       <img v-bind:src="portfolio.img" class="mb-3 w-full rounded-md shadow-md md:mx-auto md:w-2/3" />
       <div class="mb-2">
         <span class="rounded-md bg-indigo-500 px-2 py-1 text-white">{{ portfolio.type }}</span>
