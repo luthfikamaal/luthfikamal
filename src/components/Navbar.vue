@@ -1,7 +1,7 @@
 <template>
   <div class="fixed z-[1000] w-full items-center p-2 px-3 text-black backdrop-blur-md dark:text-white sm:px-5 md:px-24">
     <div class="mx-auto flex items-center">
-      <div class="mr-10 rounded-md bg-indigo-600 py-2 px-3 text-xl font-semibold">
+      <div class="mr-10 rounded-md bg-blue-600 py-2 px-3 text-xl font-semibold">
         <router-link :to="{ name: 'home' }" class="font-poppins text-white">{{ titleNav }}</router-link>
       </div>
       <ul class="font-poppins hidden md:flex">
@@ -16,11 +16,11 @@
         </li>
       </ul>
       <div class="ml-auto flex">
-        <button @click="changeTheme" class="btn mr-2 rounded-md bg-blue-700 text-white">
+        <button @click="changeTheme" class="btn mr-2 rounded-md bg-blue-600 text-white">
           <i class="bi bi-moon-fill" v-if="theme == 'dark'"></i>
           <i class="bi bi-sun-fill" v-if="theme == 'light'"></i>
         </button>
-        <button class="btn inline-block rounded-md border border-solid border-slate-400 text-black hover:bg-indigo-600 hover:text-white focus:border-indigo-600 focus:bg-indigo-700 focus:text-white md:hidden" @click="showNavLinks">
+        <button class="btn inline-block rounded-md border border-solid border-slate-400 text-black hover:bg-blue-600 hover:text-white focus:border-blue-600 focus:bg-blue-700 focus:text-white md:hidden" @click="showNavLinks">
           <i class="bi bi-list"></i>
         </button>
       </div>

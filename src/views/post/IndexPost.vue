@@ -1,11 +1,11 @@
 <template>
-  <div class="mb-5 rounded-md bg-indigo-600 py-2 text-center">
+  <div class="mb-5 rounded-md bg-blue-600 py-2 text-center">
     <h1 class="font-poppins mb-1 text-2xl font-semibold text-white">Posts</h1>
     <p class="font-serif italic text-slate-100">Blog dan beberapa catatan saya dalam pengembangan Web</p>
   </div>
   <div v-show="posts.length == 0">
     <div class="mb-3" v-for="i in 7">
-      <div class="mb-1 h-10 rounded-md bg-indigo-200"></div>
+      <div class="mb-1 h-10 rounded-md bg-blue-200"></div>
       <div class="h-5 rounded-md bg-slate-100"></div>
     </div>
   </div>
