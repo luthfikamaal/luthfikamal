@@ -1,7 +1,6 @@
 <template>
   <hr />
-  <div>
-    <div class="font-poppins my-3 text-xl">Social Media</div>
+  <div class="my-3">
     <div class="flex gap-2">
       <a target="_blank" v-bind:href="'https://github.com/' + link.github" class="b bg-slate-800 text-white"><i class="bi bi-github"></i></a>
       <a target="_blank" v-bind:href="'https://instagram.com/' + link.instagram" class="b bg-red-500 text-white"><i class="bi bi-instagram"></i></a>
@@ -22,7 +21,7 @@ export default {
         twitter: 'luthfikml_',
         showwcase: 'luthfikamal',
       },
-      footerText: 'Built with Vue 3 and Tailwind.',
+      footerText: 'Built with <i class="bi bi-heart-fill text-red-600"></i> by Muhammad Luthfi Kamal.',
     };
   },
 };

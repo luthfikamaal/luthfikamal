@@ -1,8 +1,8 @@
 <template>
   <div class="fixed z-[1000] w-full items-center p-2 px-3 text-black backdrop-blur-md dark:text-white sm:px-5 md:px-24">
     <div class="mx-auto flex items-center">
-      <div class="mr-10 text-2xl font-semibold">
-        <router-link :to="{ name: 'home' }" class="font-poppins text-slate-800">{{ titleNav }}</router-link>
+      <div class="mr-10 rounded-md bg-indigo-600 py-2 px-3 text-xl font-semibold">
+        <router-link :to="{ name: 'home' }" class="font-poppins text-white">{{ titleNav }}</router-link>
       </div>
       <ul class="font-poppins hidden md:flex">
         <li class="nav-link">
