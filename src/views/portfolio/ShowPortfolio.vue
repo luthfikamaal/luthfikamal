@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-1 font-serif text-2xl">{{ portfolio.name }}</div>
+  <div class="font-poppins mb-1 text-2xl">{{ portfolio.name }}</div>
   <img v-bind:src="portfolio.img" class="mb-3 w-full rounded-md shadow-md md:w-2/3" />
   <div class="mb-1 font-serif text-slate-700">{{ portfolio.description }}</div>
   <div class="mb-3 font-serif font-semibold">

@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-6 rounded-md border-t-4 border-solid border-indigo-300 bg-indigo-600 px-3 py-2 text-white">
+  <div class="mb-6 rounded-md border-t-4 border-solid border-indigo-300 bg-blue-600 px-3 py-2 text-white">
     <h1 class="font-poppins text-3xl">{{ person.name }}</h1>
     <p class="font-ssp text-xl">100% Homan</p>
     <p class="font-serif text-lg">Web Development Enthusiast</p>
