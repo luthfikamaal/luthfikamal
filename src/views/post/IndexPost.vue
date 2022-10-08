@@ -1,7 +1,7 @@
 <template>
   <div class="mb-5 rounded-md bg-blue-600 p-2 text-center">
     <h1 class="font-poppins mb-1 text-2xl font-semibold text-white">Posts</h1>
-    <p class="font-serif italic text-slate-100">Blog dan beberapa catatan saya dalam pengembangan Web</p>
+    <p class="font-serif italic text-slate-100">Blog dan beberapa catatan yang saya gunakan dalam pengembangan Web</p>
   </div>
   <div v-show="posts.length == 0">
     <div class="mb-3" v-for="i in 7">
