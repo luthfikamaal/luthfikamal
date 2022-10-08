@@ -4,7 +4,8 @@
   </div>
   <div class="show-post">
     <div class="mb-3 rounded-md bg-blue-700 p-2 text-center">
-      <h1 class="font-poppins text-2xl text-white">{{ post.title }}</h1>
+      <h1 class="font-poppins mb-1 text-2xl text-white">{{ post.title }}</h1>
+      <p class="font-poppins text-md text-white">{{ category.name }}</p>
     </div>
     <div v-html="post.text" class="post-content font-serif"></div>
     <div class="my-3">
@@ -35,7 +36,6 @@ export default {
           console.log(err.message);
         });
     });
-    document.title = 'Hello World';
     return {
       post,
       category,
